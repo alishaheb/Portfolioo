@@ -32,10 +32,21 @@ const skillGroups = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="section-padding bg-black/50">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 italic">Technical <span className="text-accent italic">Skills</span></h2>
-        <p className="text-gray-400 max-w-2xl mx-auto italic">A comprehensive toolkit for full-stack data science and machine learning excellence.</p>
+    <section id="skills" className="section-padding relative overflow-hidden">
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent-secondary/5 rounded-full blur-[120px] -z-10 pointer-events-none" />
+      
+      <div className="text-center mb-20">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-5xl md:text-7xl font-black mb-6 tracking-tighter"
+        >
+          Technical <span className="gradient-text italic">Expertise</span>
+        </motion.h2>
+        <p className="text-gray-400 max-w-2xl mx-auto text-lg font-medium leading-relaxed">
+          A comprehensive engineering toolkit designed for performance and scalability.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -45,10 +56,11 @@ export default function Skills() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: idx * 0.1 }}
-            whileHover={{ y: -5 }}
-            className="glass p-8 rounded-3xl border-white/5 hover:border-accent/40 transition-all group"
+            transition={{ delay: idx * 0.1, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="glass p-10 rounded-[2.5rem] border-white/5 hover:border-accent/40 transition-all group relative overflow-hidden"
           >
+            <div className="absolute inset-0 bg-mesh-gradient opacity-0 group-hover:opacity-10 transition-opacity" />
+            <div className="relative z-10">
             <div className="flex items-center gap-4 mb-6">
               <div className="p-3 bg-accent/10 rounded-2xl group-hover:scale-110 transition-transform">
                 {group.icon}
@@ -65,6 +77,7 @@ export default function Skills() {
                 </span>
               ))}
             </div>
+          </div>
           </motion.div>
         ))}
       </div>

@@ -4,91 +4,101 @@ import { Mail, Linkedin, Github, MapPin, Send } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-padding overflow-hidden">
-      <div className="relative glass p-12 md:p-20 rounded-[3rem] border-white/10">
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-accent/20 rounded-full blur-[100px] -z-10 translate-x-1/2 -translate-y-1/2" />
+    <section id="contact" className="section-padding overflow-hidden relative">
+      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] -z-10 pointer-events-none" />
+      
+      <div className="relative glass p-12 md:p-24 rounded-[4rem] border-white/5 group">
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-accent-secondary/10 rounded-full blur-[120px] -z-10 translate-x-1/2 translate-y-1/2" />
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center relative z-10">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 italic">Get in <span className="text-accent italic">Touch</span></h2>
-            <p className="text-gray-400 text-lg mb-10 leading-relaxed italic">
-              I'm always open to discussing new opportunities, machine learning research, or end-to-end MLOps architectures. 
-              Let's build something exceptional together.
+            <h2 className="text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-tight">
+              Let's <br />
+              <span className="gradient-text italic">Collaborate</span>
+            </h2>
+            <p className="text-gray-400 text-xl mb-12 leading-relaxed font-medium">
+              Ready to engineer high-impact solutions? Reach out for MLOps architectures, 
+              scalable AI research, or strategic engineering partnerships.
             </p>
 
-            <div className="space-y-6">
-              <a href="mailto:ali.sh.creative@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-accent transition-colors group">
-                <div className="p-4 glass rounded-2xl group-hover:scale-110 transition-transform">
-                  <Mail size={24} />
+            <div className="space-y-8">
+              <a href="mailto:ali.sh.creative@gmail.com" className="flex items-center gap-6 group/link">
+                <div className="p-5 glass rounded-[1.5rem] group-hover/link:scale-110 group-hover/link:bg-accent/10 transition-all duration-500 border-white/10">
+                  <Mail size={32} className="text-accent" />
                 </div>
                 <div>
-                   <p className="text-xs uppercase tracking-widest text-gray-500 font-bold mb-1">Email Me</p>
-                   <p className="text-lg font-medium">ali.sh.creative@gmail.com</p>
+                   <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-extrabold mb-1">Send an Email</p>
+                   <p className="text-xl font-black text-white group-hover/link:text-accent transition-colors">ali.sh.creative@gmail.com</p>
                 </div>
               </a>
               
-              <a href="https://linkedin.com/in/seyed-ali-shahebrahimi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-accent transition-colors group">
-                <div className="p-4 glass rounded-2xl group-hover:scale-110 transition-transform">
-                  <Linkedin size={24} />
+              <a href="https://linkedin.com/in/seyed-ali-shahebrahimi" target="_blank" rel="noopener noreferrer" className="flex items-center gap-6 group/link">
+                <div className="p-5 glass rounded-[1.5rem] group-hover/link:scale-110 group-hover/link:bg-accent-secondary/10 transition-all duration-500 border-white/10">
+                  <Linkedin size={32} className="text-accent-secondary" />
                 </div>
                 <div>
-                   <p className="text-xs uppercase tracking-widest text-gray-500 font-bold mb-1">LinkedIn</p>
-                   <p className="text-lg font-medium">Seyed Ali Shahebrahimi</p>
+                   <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-extrabold mb-1">LinkedIn Network</p>
+                   <p className="text-xl font-black text-white group-hover/link:text-accent-secondary transition-colors">Seyed Ali Shahebrahimi</p>
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 text-gray-300">
-                <div className="p-4 glass rounded-2xl">
-                  <MapPin size={24} />
+              <div className="flex items-center gap-6">
+                <div className="p-5 glass rounded-[1.5rem] border-white/10">
+                  <MapPin size={32} className="text-gray-400" />
                 </div>
                 <div>
-                   <p className="text-xs uppercase tracking-widest text-gray-500 font-bold mb-1">Location</p>
-                   <p className="text-lg font-medium">Guildford, United Kingdom</p>
+                   <p className="text-[10px] uppercase tracking-[0.3em] text-gray-500 font-extrabold mb-1">Current Base</p>
+                   <p className="text-xl font-black text-white">Guildford, United Kingdom</p>
                 </div>
               </div>
             </div>
           </motion.div>
 
           <motion.form
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="glass p-8 md:p-12 rounded-[2rem] border-white/5 space-y-6"
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="glass p-10 md:p-14 rounded-[3rem] border-white/10 space-y-8 relative overflow-hidden"
             onSubmit={(e) => e.preventDefault()}
           >
-            <div className="space-y-2">
-              <label className="text-sm font-bold text-gray-400 ml-1">Full Name</label>
+            <div className="absolute inset-0 bg-mesh-gradient opacity-5" />
+            <div className="space-y-2 relative z-10">
+              <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-1">Full Identity</label>
               <input 
                 type="text" 
                 placeholder="Name" 
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-accent/50 transition-colors"
+                className="w-full bg-white/5 border border-white/10 rounded-2xl px-8 py-5 focus:outline-none focus:border-accent/50 transition-all placeholder:text-gray-600 font-bold"
                 required
               />
             </div>
-            <div className="space-y-2">
-              <label className="text-sm font-bold text-gray-400 ml-1">Email Address</label>
+            <div className="space-y-2 relative z-10">
+              <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-1">Digital Address</label>
               <input 
                 type="email" 
                 placeholder="Email" 
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-accent/50 transition-colors"
+                className="w-full bg-white/5 border border-white/10 rounded-2xl px-8 py-5 focus:outline-none focus:border-accent/50 transition-all placeholder:text-gray-600 font-bold"
                 required
               />
             </div>
-            <div className="space-y-2">
-              <label className="text-sm font-bold text-gray-400 ml-1">Message</label>
+            <div className="space-y-2 relative z-10">
+              <label className="text-[10px] font-black text-gray-500 uppercase tracking-widest ml-1">Project Details</label>
               <textarea 
                 rows="4" 
-                placeholder="How can I help you?" 
-                className="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-accent/50 transition-colors resize-none"
+                placeholder="How can we grow together?" 
+                className="w-full bg-white/5 border border-white/10 rounded-2xl px-8 py-5 focus:outline-none focus:border-accent/50 transition-all placeholder:text-gray-600 font-bold resize-none"
                 required
               ></textarea>
             </div>
-            <button className="w-full py-5 bg-accent hover:bg-accent/90 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all hover:gap-4 active:scale-[0.98]">
-              Send Message <Send size={20} />
+            <button className="w-full py-6 bg-white text-black font-black rounded-2xl flex items-center justify-center gap-3 transition-all hover:bg-accent hover:text-white group relative z-10 overflow-hidden">
+               <span className="relative z-10 flex items-center gap-3">
+                 Dispatch Message <Send size={24} className="group-hover:translate-x-1 transition-transform" />
+               </span>
             </button>
           </motion.form>
         </div>
