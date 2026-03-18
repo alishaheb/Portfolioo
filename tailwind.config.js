@@ -17,6 +17,9 @@ export default {
       backgroundImage: {
         'mesh-gradient': "radial-gradient(at 0% 0%, hsla(161, 84%, 39%, 0.1) 0px, transparent 50%), radial-gradient(at 100% 0%, hsla(263, 89%, 66%, 0.1) 0px, transparent 50%)",
       },
+      screens: {
+        'tall': { 'raw': '(min-height: 800px)' },
+      },
       animation: {
         'shimmer': 'shimmer 2s linear infinite',
       },

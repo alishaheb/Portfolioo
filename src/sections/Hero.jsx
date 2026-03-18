@@ -30,7 +30,7 @@ export default function Hero() {
             Available for Strategic Roles
           </motion.div>
           
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-black mb-8 tracking-tighter leading-[0.9]">
+          <h1 className="text-[clamp(2.5rem,11vw,9rem)] font-black mb-10 tracking-tighter leading-[0.85] py-2">
             Seyed Ali <br />
             <span className="gradient-text italic">Shahebrahimi</span>
           </h1>
@@ -66,7 +66,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500 hover:text-white transition-colors cursor-pointer group"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden tall:flex flex-col items-center gap-2 text-gray-500 hover:text-white transition-colors cursor-pointer group"
           onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
         >
           <span className="text-[10px] uppercase tracking-[0.3em] font-bold opacity-50 group-hover:opacity-100 transition-opacity">Scroll</span>
