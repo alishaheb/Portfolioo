@@ -1,0 +1,52 @@
+CURRICULUM VITAE 
+Name: Seyed Ali Shahebrahimi
+Mobile: +44 07725 846171
+Email: ali.sh.creative@gmail.com
+Address: Guildford, United Kingdom
+LinkedIn Profile: linkedin.com/in/seyed-ali-shahebrahimi 
+Portfolio Website: https://main.d5jz7k0cqtuba.amplifyapp.com/
+
+Profile & Skills
+Data Scientist & Machine Learning Engineer (MSc) with 4 years of experience across the full software and machine learning lifecycle. Specialized in building end-to-end solutions, including scalable data pipelines, model training and deployment, and API integration using Flask and FastAPI. Proven track record of delivering production-ready ML pipelines and KPI dashboards that improve model generalization and development speed.
+
+Technical Skills:
+•	Programming & APIs: Python (Flask, FastAPI), R, SQL, RESTful APIs, C, C#, ASP.NET, JavaScript, Java,
+•	Data Science & Analytics: Pandas, NumPy, scikit-learn, PySpark, deep learning (PyTorch, TensorFlow), graph neural networks (PyG), feature engineering.
+•	DevOps, MLOps & Delivery: Docker, Git, CI/CD with GitHub Actions, model deployment & monitoring,
+ Agile (Scrum/Kanban), Jira, Trello
+•	Cloud Platforms: AWS (Lambda, EC2, S3, DynamoDB, SageMaker); skills transferable to Azure
+•	Visualization & BI: Matplotlib, Seaborn, Plotly, Tableau, Excel, Word; KPI dashboards and data storytelling
+•	Operating Systems: macOS, Windows, Linux
+
+Work Experience
+Machine Learning Engineer (Software Developer) — Azaries, Guildford, UK: Aug 2024 – Aug 2025
+•	Developed and executed Amazon SageMaker Pipelines across 20+ real-world datasets, including NHS service demand and customer churn, for model training, evaluation, and comparison.
+•	Built reusable end-to-end ML pipelines (PyTorch, scikit-learn, PySpark, PyG) for classification and regression, incorporating unit and integration tests, data validation, CI/CD, MLflow tracking, production monitoring, and standardised JSON-based outputs for downstream systems.
+•	Implemented production-grade MLOps practices, including data validation, automated testing, CI/CD pipelines with Gitea, MLflow experiment tracking, and post-deployment monitoring.
+•	Translated model outputs into actionable insights using feature importance, community and centrality analysis, link prediction, and SHAP/Permutation tests, informing data quality improvements and decision-making.
+•	Built KPI dashboards for stakeholders (accuracy, precision, recall, F1-score, ROC-AUC) using Tableau and Plotly, consuming model outputs serialised in JSON.
+•	Fine-tuned a Hugging Face Transformer to verbalise structured rules and model outputs, improving interpretability and explainability.
+•	Participated in sprint planning, refinement, and reviews; used Jira/Trello for backlog management, prioritisation, and progress reporting.
+
+Software Developer — Boland Afarin Eram Co, Shiraz: Feb 2020 – Feb 2023
+•	Built and deployed ETL pipelines and predictive models for churn prediction, demand forecasting, risk assessment, and personalisation using structured business data.
+•	Performed exploratory data analysis and engineered SQL- and JSON-based data pipelines to support analytics and machine learning workflows.
+•	Delivered data-driven insights through dashboards and reports, directly supporting operational and strategic decision-making.
+•	Developed backend services and applications using Python and scikit-learn, integrating machine learning outputs into production systems.
+•	Created web applications using React, C#, ASP.NET, Microsoft SQL Server, and MySQL.
+
+Projects
+• Business analytics on a real-world business dataset – Performed using R.Github
+• LLM project: RoBERTa/LSTM for NER & Text Classification (PyTorch) —CI/CD with GitHub Actions.Github
+• Created a unified preprocessing pipeline for diverse data to automate ML data preparation. Github
+• Built a cost-aware stock market analysis platform using AWS Lambda, EC2, S3 APIs, CloudFormation, Elastic Load Balancing (ELB), achieving ~15% reduction in compute costs.  Github
+• Dissertation: Fog-Robust Vehicle Detection (MSc) — Applied YOLOv8 on foggy images; improved mAP by +5.8% vs baseline. Github
+
+Education
+MSc Data Science with Merit — University of Surrey, Guildford, UK (2023–2025)
+BSc Computer Engineering (Software) — Shiraz Azad University (2016 – 2019)
+
+Publication: 
+Co‑author, “Integrating Language Models into Inductive Logic Programming: Enhancing Knowledge Integration and Human‑Centric Explainability,” accepted for presentation at IJCLR 2025, University of Surrey.
+
+All reference available as request.
